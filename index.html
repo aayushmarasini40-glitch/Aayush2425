@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="The personal portfolio of Aayush Marasini.">
+  <title>Aayush Marasini | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ANIMATED BACKGROUND -->
+  <div class="ambient-background">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+  </div>
+
+  <!-- VIDEO INTRO -->
+  <section class="intro" id="intro">
+  <video
+    id="entranceVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-label="Intro video">
+    <source src="entrance.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="intro-overlay"></div>
+
+  <div class="intro-content">
+    <p class="eyebrow">WELCOME TO MY WORLD</p>
+    <h1>AAYUSH <span>MARASINI</span></h1>
+    <p class="intro-subtitle">Dream it. Build it. Make it happen.</p>
+
+    <button id="enterButton" class="primary-button">
+      ENTER TO MY WORLD <span>↗</span>
+    </button>
+
+    <p class="intro-note">A little introduction before we begin</p>
+  </div>
+
+  <button class="skip-button" id="skipButton">SKIP INTRO ↗</button>
+  <button class="start-button" id="startButton">▶ CLICK TO START</button>
+</section>
+
+  <!-- MAIN WEBSITE -->
+  <main id="mainSite" class="hidden">
+
+    <header class="navbar">
+      <a href="#home" class="logo">A.M<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero section" id="home">
+      <div class="hero-text reveal">
+        <p class="eyebrow"><span class="status-dot"></span> WELCOME TO MY PORTFOLIO</p>
+        <h1>Hey, I'm<br><span class="gradient-text">Aayush Marasini</span></h1>
+        <h2>I am a <span id="typingText">Student</span><span class="typing-caret">|</span></h2>
+        <p class="hero-description">
+          Welcome to my digital space. I love learning new things,
+          exploring technology, and turning creative ideas into reality.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="primary-button">Explore My World ↗</a>
+          <a href="#contact" class="secondary-button">Contact Me</a>
+        </div>
+        <div class="social-row">
+          <a href="https://www.instagram.com/aayushmarasini12/"
+             target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://www.facebook.com/share/1FWkSS9Sqc/"
+             target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          <a href="https://github.com/"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <img src="myphoto.jpg" alt="Portrait of Aayush Marasini"
+               class="profile-photo">
+          <div class="photo-label">
+            <span class="status-dot"></span>
+            <div><strong>AAYUSH MARASINI</strong><small>WELCOME TO MY SPACE</small></div>
+          </div>
+        </div>
+        <div class="floating-tag tag-top">CREATIVE MIND ✦</div>
+        <div class="floating-tag tag-bottom">ALWAYS LEARNING ↗</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <p>A little about who I am and what inspires me.</p>
+      </div>
+      <div class="glass-card about-card reveal">
+        <div class="about-symbol">AM<span>.</span></div>
+        <div>
+          <h3>Hello, world! 👋</h3>
+          <p>
+            I'm Aayush Marasini. I'm a student who enjoys technology,
+            creative projects, and learning useful new skills.
+            This website is my personal corner of the internet where
+            I can share my interests, projects, and journey.
+          </p>
+          <p>
+            My goal is to keep improving, stay curious, and build
+            things that I'm proud of.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Skills I enjoy exploring and developing.</p>
+      </div>
+      <div class="card-grid">
+        <article class="glass-card skill-card reveal">
+          <div class="card-icon">⌨️</div>
+          <h3>HTML</h3>
+          <p>Building the structure of web pages.</p>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <div class="card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Designing layouts, colours, and animations.</p>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Learning to make websites interactive.</p>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <div class="card-icon">💡</div>
+          <h3>Creativity</h3>
+          <p>Exploring ideas and solving problems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M BUILDING</p>
+        <h2>My <span class="gradient-text">Projects</span></h2>
+        <p>A collection of my learning and creative work.</p>
+      </div>
+      <div class="card-grid">
+        <article class="glass-card project-card reveal">
+          <div class="project-number">PROJECT / 01</div>
+          <div class="card-icon">🌐</div>
+          <h3>Personal Portfolio</h3>
+          <p>A personal website featuring animations, a video intro,
+            and a responsive design.</p>
+          <span class="project-tag">HTML · CSS · JS</span>
+        </article>
+        <article class="glass-card project-card reveal">
+          <div class="project-number">PROJECT / 02</div>
+          <div class="card-icon">🕸️</div>
+          <h3>Creative Web Design</h3>
+          <p>A place to experiment with visual effects, colours,
+            and interactive web experiences.</p>
+          <span class="project-tag">DESIGN · DEVELOPMENT</span>
+        </article>
+        <article class="glass-card project-card reveal">
+          <div class="project-number">PROJECT / 03</div>
+          <div class="card-icon">🚀</div>
+          <h3>Coming Soon</h3>
+          <p>More ideas and projects will be added as I continue learning.</p>
+          <span class="project-tag">IN PROGRESS</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY LEARNING JOURNEY</p>
+        <h2>Education & <span class="gradient-text">Growth</span></h2>
+        <p>I am a student at Oxford School</p>
+      </div>
+      <div class="glass-card education-card reveal">
+        <div class="education-icon">🎓</div>
+        <div>
+          <h3>My School Journey</h3>
+          <p>I'm continuing my studies while exploring technology
+            and developing new skills in Oxford School.</p>
+          <span class="project-tag">LEARN · PRACTISE · IMPROVE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <p>Find me on my social platforms.</p>
+      </div>
+      <div class="card-grid social-cards">
+        <a class="glass-card social-card reveal"
+           href="https://www.instagram.com/aayushmarasini12/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="card-icon">📸</span>
+          <h3>Instagram</h3>
+          <p>@aayushmarasini12</p>
+          <span class="social-arrow">Open profile ↗</span>
+        </a>
+        <a class="glass-card social-card reveal"
+           href="https://www.facebook.com/share/1FWkSS9Sqc/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="card-icon">👥</span>
+          <h3>Facebook</h3>
+          <p>Connect with me</p>
+          <span class="social-arrow">Open link ↗</span>
+        </a>
+        <a class="glass-card social-card reveal"
+           href="https://github.com/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="card-icon">💻</span>
+          <h3>GitHub</h3>
+          <p>My coding space</p>
+          <span class="social-arrow">Open GitHub ↗</span>
+        </a>
+      </div>
+      <div class="glass-card contact-form reveal">
+        <h3>📧 Send Me a Message</h3>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d2ea9862-3602-474a-a2d0-443cd36bd66f">
+          <input type="hidden" name="subject" value="New message from your portfolio!">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="primary-button">Send Message ↗</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#home" class="logo">AM<span>.</span></a>
+      <p>Designed with curiosity by <strong>Aayush Marasini</strong>.</p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+      <small>© <span id="year"></span> Aayush Marasini. All rights reserved.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>   
